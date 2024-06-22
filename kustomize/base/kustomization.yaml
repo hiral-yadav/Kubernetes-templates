@@ -1,0 +1,11 @@
+resources:
+- service.yaml
+- deployment.yaml
+namespace: transaction-management-app
+commonLabels:
+  app: notification-service
+commonAnnotations:
+  app: notification-service
+configMapGenerator:
+- name: notification-service-config
+  env: config.json

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Service
+spec:
+  type: ClusterIP
+  ports:
+  - name: tx-app-port
+    port: 80
+    targetPort: 80
+

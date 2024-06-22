@@ -1,0 +1,8 @@
+apiVersion: sender.io/v1alpha1
+kind: email
+metadata:
+  name: emailsender
+spec:
+  sender: no-reply@gmail.com
+  server: 127.0.0.1:443
+  replicas: 1
